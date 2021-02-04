@@ -10,7 +10,7 @@ rm(list=ls())
 # Step 1: Setting for the model run
 
 # species code (from lkpSpecies in modelling database. This will be the new folder name containing inputs/ouptuts)
-model_species <- "chiopalaorga"
+model_species <- "gophagas"
 # loc_scripts is your repository. Make sure your git repository is set to correct branch
 loc_scripts <- here()
 # The main modelling folder for inputs/outputs. All sub-folders are created during the model run (when starting with step 1)
@@ -54,12 +54,12 @@ add_vars = NULL
 # list standard variables to exclude from model run
 remove_vars = NULL
 
-remove_vars = c("nlcdopn1", "nlcdopn10", "nlcdopn100", "impsur1", "impsur10", "impsur100",
-  "ntm_1_01", "ntm_1_02", "ntm_1_06", "ntm_1_08", "ntm_1_09", "ntm_2_01",
-  "ntm_2_02", "ntm_2_05", "ntm_2_06", "ntm_3_01", "ntm_3_03", "ntm_3_09",
-  "ntm_3_12", "ntm_4_01", "ntm_4_02", "ntm_4_03", "ntm_4_05", "ntm_4_06",
-  "ntm_5_01", "ntm_6_01", "ntm_6_02", "ntm_6_03", "ntm_6_04", "nlcdshb1",
-  "nlcdshb10", "nlcdshb100")
+# remove_vars = c("nlcdopn1", "nlcdopn10", "nlcdopn100", "impsur1", "impsur10", "impsur100",
+#   "ntm_1_01", "ntm_1_02", "ntm_1_06", "ntm_1_08", "ntm_1_09", "ntm_2_01",
+#   "ntm_2_02", "ntm_2_05", "ntm_2_06", "ntm_3_01", "ntm_3_03", "ntm_3_09",
+#   "ntm_3_12", "ntm_4_01", "ntm_4_02", "ntm_4_03", "ntm_4_05", "ntm_4_06",
+#   "ntm_5_01", "ntm_6_01", "ntm_6_02", "ntm_6_03", "ntm_6_04", "nlcdshb1",
+#   "nlcdshb10", "nlcdshb100")
 
 
 # do you want to stop execution after each modeling step (script)?
